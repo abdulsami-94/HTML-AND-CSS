@@ -2,9 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Abdul sami">
+    <meta name="discription" content="Blog"
+    <meta name="keyword" content="keyword,keyword1,keyword2,keyword3">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="applefav.svg" type="image/x-icon">
 </head>
 <body>
 
@@ -13,6 +17,8 @@
     <h1>Day 1 : HTML Basics + Structure</h1>
     <h2>Name : Abdul Sami Shaikh</h2>
     <p>Bio : I am Studying at ASM CSIT College</p>
+    <p>Age : 20</p>
+    <p>Email Address : abdulsamishaikh232@gmail.com</p>
     <h3>2. Journal page</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem animi qui soluta ducimus vitae quae, saepe accusantium. Nihil aperiam exercitationem deleniti dolorum, accusamus odio ipsam! Pariatur nostrum ad repellendus perspiciatis.</p>
     <h3>3. Motivational Quote page</h3>
@@ -134,7 +140,7 @@
         </tr>
         <tr>
             <td>5. </td>
-            <td>Prepration of Report</td>
+            <td>Preparation of Report</td>
             <td>09/10/2025</td>
         </tr>
     </table>
@@ -149,7 +155,7 @@
         </tr>
         <tr>
             <td>1. </td>
-            <td>Engilsh</td>
+            <td>English</td>
             <td>61</td>
             <td>B</td>
         </tr>
@@ -404,13 +410,110 @@
         <h3>2. Audio Player</h3>
         <audio src="allgirl.mp3" controls></audio><br>
 
-        <h3>3.Movie Trailer </h3>
+        <h3>3. Movie Trailer </h3>
         <h4>IMAGE</h4>
         <img src="movimg.jpg" height="250" alt="movie image"><br><br>
         <h4>VIDEO</h4>
         <video src="car.mp4" controls width="400"></video>
 
         <br><hr><br>
+
+        <h1>Day 10 : Forms Deep Dive</h1>
+        <h3>1. File Upload</h3>
+        <lable>Upload your resume:</lable><br><br>
+        <input type="file"><br>
+
+        <h3>2. Profile Creation</h3>
+        <form action="">
+            <label for="">Name:</label>
+                <input type="name"><br><br>
+            <label>Email:</label>
+                <input type="email"><br><br>
+            <lable>Upload Profile Pic:</lable>
+            <input type="file"><br><br>
+                <button type="submit">Login</button>
+        </form>
+
+        <h3>3. Contact us</h3>
+        <lable>Name:</lable>
+            <input type="text"><br><br>
+        <lable>Email:</lable>
+            <input type="mail"><br><br>
+        <label>Opinion:</label>
+            <textarea rows="2" cols="30"></textarea><br><br>
+        <label>Attachment:</label>
+            <input type="file"><br><br>
+        <button type="submit">Submit</button>
+
+        <br><hr><br>
+
+        <h1>Day 11 : Metadata</h1>
+
+    <h3>1. Add Favicon to the site.</h3>
+    <p>Look Near the URL for the ICON.</p><br>
+
+    <h3>2. Mobile-Friendly Meta Tag.</h3>
+    <p>Added but there is no visible chanes in the site.</p><br>
+
+    <h3>3. Optimise Blog with Discription and Keywords.</h3>
+    <p>Added but there is no visible chanes in the site.</p>
+
+    <br><hr><br>
+
+    <h1>Day 12 : iFrames</h1>
+
+    <h3>1. Youtube Video</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eRsO2b3_QpM?si=VketHEzB9O9VWbt7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3>2.Google Maps Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.400402283314!2d78.0395672742844!3d27.175149548765308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1757168296045!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h3>3. Favourite Websites</h3>
+        <iframe src="https://en.wikipedia.org/wiki/Main_Page" width="600" height="450" frameborder="0"></iframe>
+
+    <br><hr><br>
+
+    <h1>Day 13 : Forms Validation (Basic HTML)</h1>
+        <h3>1. Form with required details.</h3>
+        <form action="">
+            <label>Email ID:</label>
+            <input type="email" required><br><br>
+            <label>Password</label>
+            <input type="password" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <h3>2. Age Restriction (18+)</h3>
+        <form action="">
+            <label>Name:</label>
+            <input type="text" required><br><br>
+            <label>Age</label>
+            <input type="number" name="age" min="18" max="60"><br><br>
+            <lable>ZipCode:</lable>
+            <input type="text" name="Zipcode" pattern="(0-9) {6}" placeholder="6-digit pin"><br><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <h3>3. Sign up page with pattern validation</h3>
+        <form action="">
+            <label>Email ID:</label>
+            <input type="email" required><br><br>
+            <label>Password</label>
+            <input type="password" required><br><br>
+            <lable>Passcode:</lable>
+            <input type="text" name="Zipcode" pattern="(0-9) {6}" placeholder="6-digit pin"><br><br>
+            <button type="submit">Login</button>
+        </form>
+
+        <br><hr><br>
+
+        <h1>Day 14 : Accessibility</h1>
+        <h3>1. Accessible Form</h3>
+
+
+        <h3>2. Gallery With Alt</h3>
+
+
+        <h3>3. Keyboard Navigation</h3>
+
 
 
     </body>
